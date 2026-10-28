@@ -1,0 +1,21 @@
+{
+  "name": "triode-to-computer-3d",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "从真空三极管到计算机：可交互 3D 教学与仿真实验台",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:dev": "node build.mjs --dev",
+    "smoke": "node tools/smoke.mjs",
+    "shot": "node tools/shot.mjs"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "acorn": "^8.19.0",
+    "esbuild": "^0.28.2",
+    "puppeteer-core": "^25.16.0"
+  }
+}

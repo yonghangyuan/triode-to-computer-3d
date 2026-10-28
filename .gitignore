@@ -1,0 +1,20 @@
+# 依赖
+node_modules/
+
+# 分享包（打包产物）
+分享包/
+
+# Android 构建中间产物 / 本地签名
+android/build/
+android/assets/
+android/keystore/
+android/out/*.idsig
+
+# 本地截图 / 调试产物
+tools/shots/
+dist/index.html.good
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db

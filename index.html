@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#050a12" />
+  <title>从真空三极管到计算机 · 3D 原理实验台</title>
+  <meta name="description" content="从真空三极管的电子运动开始，逐层搭建逻辑门、触发器、寄存器，直到一台可单步运行的存储程序计算机。" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="brand-text">
+          <h1>从真空三极管到计算机</h1>
+          <p id="brand-sub">3D 原理实验台 · 教学 / 仿真</p>
+        </div>
+      </div>
+      <nav id="tabs" aria-label="抽象层次"></nav>
+      <div class="top-actions">
+        <button id="btn-tour" class="ghost-btn" type="button">导览</button>
+        <button id="btn-help" class="ghost-btn" type="button">使用说明</button>
+      </div>
+    </header>
+
+    <div id="scroll-track" aria-hidden="true"></div>
+
+    <aside id="panel-left" class="column panel">
+      <div class="loading">正在载入实验台…</div>
+    </aside>
+
+    <main id="stage">
+      <canvas id="gl"></canvas>
+      <div id="labels" aria-hidden="true"></div>
+      <div id="stage-hint">
+        <span>拖动旋转</span><i></i><span>滚轮缩放</span><i></i><span>右键平移</span><i></i><span>点击元件查看说明</span>
+      </div>
+      <div id="stage-badge"></div>
+      <div id="stage-caption"></div>
+      <div id="drawer-scrim" aria-hidden="true"></div>
+      <div id="drawer-buttons">
+        <button id="btn-drawer-left" type="button">控制台</button>
+        <button id="btn-drawer-right" type="button">仪表</button>
+      </div>
+    </main>
+
+    <aside id="panel-right" class="column panel">
+      <div class="loading">正在载入教学面板…</div>
+    </aside>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close" type="button" aria-label="关闭">×</button>
+      <p class="eyebrow">TEACHING / SIMULATION</p>
+      <h2>一台计算机，从一只玻璃管开始</h2>
+      <p class="modal-lede">
+        这是一个可交互的 3D 教学模型：从 1906 年德福雷斯特的真空三极管出发，
+        看见电子如何被栅极"闸住"，再把这种电气行为一层层抽象成逻辑门、记忆、运算，
+        最后一台 4 位存储程序计算机在眼前单步跑起来。
+      </p>
+      <div id="modal-levels" class="modal-levels"></div>
+      <div class="modal-footer">
+        <p class="modal-note">全部离线运行 · 单个 HTML 文件 · 支持鼠标拖拽与元件点选</p>
+        <button id="modal-enter" class="primary-btn" type="button">进入 3D 实验台</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
