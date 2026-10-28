@@ -1,5 +1,8 @@
 # 从真空三极管到计算机 · 3D 原理实验台
 
+> **在线体验**：https://yonghangyuan.github.io/triode-to-computer-3d/
+> **GitHub**：https://github.com/yonghangyuan/triode-to-computer-3d
+
 一个**单文件、离线运行**的交互式 3D 教学模型：从 1906 年的真空三极管出发，
 逐层搭建逻辑门、触发器、寄存器，最后让一台 4 位存储程序计算机在眼前单步运行。
 
